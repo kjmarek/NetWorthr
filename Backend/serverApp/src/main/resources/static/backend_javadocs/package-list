@@ -1,7 +1,0 @@
-com.mockito.tests
-com.serverApp.serverApp
-com.serverApp.serverApp.controllers
-com.serverApp.serverApp.models
-com.serverApp.serverApp.other
-com.serverApp.serverApp.repositories
-com.serverApp.serverApp.websocket
