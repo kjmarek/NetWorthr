@@ -67,7 +67,6 @@ public class ArticleController {
     @RequestMapping("/article/updateDB")
     @Scheduled(fixedRate = 18000000)//5 hours
     public void fetchNewArticles(){
-        //API key is b46a1992ed6c457bb31e58178813a3cd
 
         ArticleRetrieval r = new ArticleRetrieval();
         ArrayList<Article> articles;
@@ -81,7 +80,7 @@ public class ArticleController {
             try {
                 URL articlesURL = new URL("https://newsapi.org/v2/everything?" +
                         "q=" + URLEncoder.encode(keywords.get(i), "UTF-8") + "&" +
-                        "apiKey=b46a1992ed6c457bb31e58178813a3cd");
+                        "");
                 //System.out.println(articlesURL.toString());
                 articles = r.getFromURL(articlesURL);
 
